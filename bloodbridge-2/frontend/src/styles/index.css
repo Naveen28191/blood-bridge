@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ink-900: #0b1220;
+  --color-signal: #e11d3c;
+  --color-amber: #f5a623;
+  --color-teal: #1fae7a;
+  --color-slate: #3b82c4;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.font-data {
+  font-family: "IBM Plex Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Visible keyboard focus everywhere — this is emergency-response software */
+:focus-visible {
+  outline: 2px solid var(--color-slate);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
